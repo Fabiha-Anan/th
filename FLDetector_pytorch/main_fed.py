@@ -10,7 +10,7 @@ from th.FLDetector_pytorch.models.resnet20 import resnet20
 from th.FLDetector_pytorch.models.MaliciousUpdate import LocalMaliciousUpdate
 from th.FLDetector_pytorch.models.Update import LocalUpdate
 from th.FLDetector_pytorch.utils.info import print_exp_details, write_info_to_accfile, get_base_info
-from utils.options import args_parser
+from th.FLDetector_pytorch.utils.options import args_parser
 from th.FLDetector_pytorch.utils.sampling import mnist_iid, mnist_noniid, cifar_iid, cifar_noniid
 from th.FLDetector_pytorch.utils.defense import fltrust, multi_krum, get_update, RLR, flame, get_update2, fld_distance, detection, detection1, parameters_dict_to_vector_flt, lbfgs_torch
 from th.FLDetector_pytorch.models.Attacker import attacker
