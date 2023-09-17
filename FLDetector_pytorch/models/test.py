@@ -10,7 +10,7 @@ from skimage import io
 import cv2
 from skimage import img_as_ubyte
 import numpy as np
-from FLDetector_pytorch.models.add_trigger import add_trigger
+from th.FLDetector_pytorch.models.add_trigger import add_trigger
 def test_img(net_g, datatest, args, test_backdoor=False):
     args.watermark = None
     args.apple = None
