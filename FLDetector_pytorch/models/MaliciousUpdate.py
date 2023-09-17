@@ -13,7 +13,7 @@ import cv2
 from skimage import img_as_ubyte
 import heapq
 import os
-from FLDetector_pytorch.models.add_trigger import add_trigger
+from th.FLDetector_pytorch.models.add_trigger import add_trigger
 
 class DatasetSplit(Dataset):
     def __init__(self, dataset, idxs):
