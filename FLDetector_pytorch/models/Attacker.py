@@ -1,15 +1,15 @@
 import sys
 
-from FLDetector_pytorch.models.Fed import FedAvg
-from FLDetector_pytorch.models.Update import LocalUpdate
+from th.FLDetector_pytorch.models.Fed import FedAvg
+from th.FLDetector_pytorch.models.Update import LocalUpdate
 
 sys.path.append('../')
 
 from random import random
-from FLDetector_pytorch.models.test import test_img
-from FLDetector_pytorch.models.Nets import ResNet18, vgg19_bn, vgg19, get_model
+from th.FLDetector_pytorch.models.test import test_img
+from th.FLDetector_pytorch.models.Nets import ResNet18, vgg19_bn, vgg19, get_model
 from torch.utils.data import DataLoader, Dataset
-from FLDetector_pytorch.utils.options import args_parser
+from th.FLDetector_pytorch.utils.options import args_parser
 
 import torch
 from torchvision import datasets, transforms
@@ -24,9 +24,9 @@ import time
 import math
 import heapq
 import argparse
-from FLDetector_pytorch.models.add_trigger import add_trigger
-from FLDetector_pytorch.utils.defense import flame_analysis, multi_krum, get_update
-from FLDetector_pytorch.models.MaliciousUpdate import LocalMaliciousUpdate
+from th.FLDetector_pytorch.models.add_trigger import add_trigger
+from th.FLDetector_pytorch.utils.defense import flame_analysis, multi_krum, get_update
+from th.FLDetector_pytorch.models.MaliciousUpdate import LocalMaliciousUpdate
 
 
 def benign_train(model, dataset, args):
